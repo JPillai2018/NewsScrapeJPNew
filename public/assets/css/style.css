@@ -1,0 +1,310 @@
+body {
+	background-color:rgb(207, 207, 207);
+	background-position: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+/* Nav Bar Styling */
+.navbar{
+	background-color: black;
+	color: goldenrod;
+}
+.navbar-header .navbar-brand {
+	background-color: #0c0c0c;
+	border-color:rgb(190, 165, 18);
+	color: goldenrod;
+}
+.navbar-header:hover{
+	/* background-color: #f8a304; */
+	color: silver;
+}
+.jumbotron{
+	background-color: #ddc446;
+	background-color: #0c0c0c;
+	color: #0508c4;
+	color: goldenrod;
+	text-align: center;
+
+}
+.jumbotron{
+	background-color: #ddc446;
+	background-color: #0c0c0c;
+	color: #0508c4;
+	color: goldenrod;
+	text-align: center;
+
+}
+.jumbotron:hover{
+	background-color: #ddc446;
+	background-color: #0c0c0c;
+	color: #0508c4;
+	color:silver;
+	text-align: center;
+
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Roboto Slab', serif;
+}
+
+.display-h1{
+	font-family: cursive;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Button Styling */
+.btn{
+	background-color: #0c0c0c;
+	border-color:rgb(190, 165, 18);
+	color: goldenrod;
+	margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #f8a304;
+  border-color: #7c5e02;
+}
+
+.button-dark{
+	background-color: #0c0c0c;
+	/* border-color:rgb(190, 165, 18); */
+	/* color: goldenrod; */
+	margin-top: 10px;
+	/* border-color: 5px;
+	border-radius: 5px; */
+	background-image:url(../img/home6.png);
+	/*background-image:url(../img/home-button.png);*/
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 34px;
+	width: 35px;
+	background-color: black;
+}
+
+.button-dark:hover {
+  /* background-color: #f8a304;
+	border-color: #7c5e02; */
+	color: #0c0c0c;
+}
+
+.addNote{
+	background-color: #0c0c0c;
+	border-color:rgb(190, 165, 18);
+	color: goldenrod;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+
+.addNote:hover {
+  background-color: #f8a304;
+	border-color: #7c5e02;
+	color: #0c0c0c;
+}
+
+.deleteArticle{
+	background-color: #0c0c0c;
+	border-color:rgb(190, 165, 18);
+	color: goldenrod;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+
+.deleteArticle:hover {
+  background-color: #f8a304;
+	border-color: #7c5e02;
+	color: #0c0c0c;
+}
+.panel-default>.panel-heading {
+  background-color: #3f3535;
+  color: #fff;
+}
+.saved-buttons  {
+  background-color: #0c0c0c;
+	border-color:rgb(190, 165, 18);
+	color: goldenrod;
+}
+
+/* Article Styling */
+.storyPanel {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: rgb(189, 189, 189);
+	color: #ddd;
+	padding: 20px;
+	border-radius: 10px 10px 10px 10px;
+	border: 2px solid #ddd;
+	border: 2px solid rgb(93, 93, 93);
+	position: relative;
+  margin: 50px 20px;
+  opacity: 0.9;
+}
+
+.storyHeadline{
+	color: #245702;
+	
+	height: 15px;
+}
+.storySummary{
+	color: #0c0c0c;
+}
+.storyByline{
+	color: #0c0c0c;
+}
+.imgBox {
+  overflow: hidden;
+  border: 3px solid #ddd;
+}
+
+.imgBox:hover .storyImg{
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.storyImg {
+	float: right;
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+}
+
+#saveArticleButton{
+	background-color: #0c0c0c;
+	border-color:rgb(190, 165, 18);
+	color: goldenrod;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+
+#saveArticleButton:hover {
+  background-color: #f8a304;
+	border-color: #7c5e02;
+	color: #3f3535;
+}
+
+.panel-default {
+	border-color: #3f3535;
+}
+
+.artLink {
+  color: #2c2fe9;
+}
+
+.saved-buttons {
+  margin-right: 1em;
+}
+
+.noteText {
+  color: #722b2b;
+}
+
+.deletex {
+  color: #722b2b;
+}
+
+.modal-content{
+	width: 100%;
+}
+.modal-body{
+	/* background-image: url(../img/nyt-modal-background.jpg); */
+	background-color: silver;
+	background-size: cover;
+	background-position: center;
+
+}
+
+.alert-warning {
+	color: goldenrod;
+	background-color: #0c0c0c;
+	border-color: #722b2b;
+}
+
+.main-img {
+	margin-bottom: 2em;
+	border-top: 2px solid #3f3535;
+	border-bottom: 2px solid #3f3535;
+}
+
+.savedArt {
+	margin: 0 auto;
+	width: 80%;
+}
+
+.modal-body {
+  padding-top: 10px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.noteTitle {
+  width: 100%;
+  height: 20px;
+  background: transparent;
+  border: none;
+  font-size: medium;
+	border: 2px solid #777;
+	word-wrap: break-word;
+	border-radius: 5px;
+}
+.noteTitleEdit {
+	padding-left: 5px;
+	margin-left: 10px;
+	color: black;
+	background-color: rgb(195, 195, 195);
+  width: 100%;
+  height: 30px;
+  background: transparent;
+  border: none;
+	font-size: medium;
+	word-wrap: break-word;
+	/* border: 2px solid #777; */
+	/* border-radius: 5px; */
+}
+.noteInput {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  font-size: small;
+	border: 2px solid rgb(223, 223, 223);
+	word-wrap: break-word;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.deleteNote{
+	/* background-color: pink; */
+	float: left;
+	background-image:url(../img/delete.png);
+	background-repeat: no-repeat;
+	padding: 4px;
+	height: 35px;
+	width: 35px;
+	background-size: 100%;
+
+}
+.editNote{
+	/* background-color: pink; */
+	float: left;
+	background-image:url(../img/edit.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	padding: 4px;
+	height: 35px;
+	width: 35px;
+}
+.note{
+	margin: 10px;
+}
+
+.modal-footer{
+	background-color: rgb(182, 182, 182);
+}
+
+.noteModal{
+	border-radius: 10px;
+}
+.noteModal .instructions{
+
+	float: left;
+}

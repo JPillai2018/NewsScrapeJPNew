@@ -1,0 +1,91 @@
+<header class="header">
+  	<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="/">MongoScrape</a>
+				</div>
+        <div class="nav-buttongroup pull-right">
+          <a href="/"><button class="btn button-dark"></button></a>
+        </div>
+			</div>
+		</nav>
+    <div class="main-img-container">
+      <div class="jumbotron">
+        <h1 class="display-h1">News Scrape</h1>
+        <div class="jumbo-theme">
+          <hr class="my-4" >
+        </div>
+        <h3 class="display-h1">News Archives - Space News</h3> <h5>from</h5><h4>The Verge</h4>
+      </div>
+    </div>  
+</header>
+{{!-- <header class="header">
+    <h1 id="neon">[Saved Articles]</h1>
+    <nav class="button-group">
+        <a href="/"><button class="button-dark">Home</button></a>
+    </nav>
+</header>
+<div class="filler"></div> --}}
+
+{{!-- <div class="savedArt articles">  --}}
+<div class="articles container">
+  {{!-- #each to iterate through articles and create article panels --}}
+  {{#each articles}}
+    {{#if saved}}
+      <figure class="storyPanel clearfix">
+        <a href="{{storyUrl}}" class="pull-right" target="_blank">
+          <div class="imgBox">
+            <img src="{{imageUrl}}" alt="" class="storyImg" height="150">
+          </div>
+        </a>
+        {{#if storyUrl}}
+          <a href="{{storyUrl}}" class="storyLink" target="_blank">
+            <h4 class="storyHeadline">{{title}}</h4>
+          </a>
+        {{else}}
+          <h4 class="storyHeadline">{{title}}</h4>
+        {{/if}}
+        <hr>
+        <h5 class="storyByline">By:-{{byLine}}</h5>
+        <h6 class="storySummary">{{storyText}}</h6>
+        <button class="addNote btn storyButton" data-id="{{_id}}">Add/Edit Note</button>
+        <button class="deleteArticleSaved btn storyButton" data-id="{{_id}}">Delete Article</button>
+      </figure>
+    {{/if}}
+  {{/each}}
+
+  {{!-- modal for displaying and creating notes --}}
+  <div id="noteModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title text-center">Add a note</h4>
+        </div>
+        <div class="modal-body">
+          <input type="text" id="noteTitleEntry" class="noteTitle" placeholder="Enter Title">
+          <input type="text" id="noteBodyEntry" class="noteInput" placeholder="Enter Notes">
+          <div id="noteArea"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="submitNote" class="btn">Save Note</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{!-- error modal --}}
+  <div id="error" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <h2>There was an error processing your request.  Please try again later.</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
